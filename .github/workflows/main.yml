@@ -39,5 +39,5 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build http://bootchamp-first-react-app1.surge.sh/ --token ${{secrets.REACT_TOKEN}}
+      run: surge ./build http://first_react_app2.surge.sh/ --token ${{secrets.REACT_TOKEN}}
         
