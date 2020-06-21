@@ -15,13 +15,6 @@ const Child = () => {
       >
         Increment
       </button>
-      <button
-        onClick={() => {
-          counterValue[1](--counterValue[0]);
-        }}
-      >
-        Decrement
-      </button>
     </div>
   );
 };
