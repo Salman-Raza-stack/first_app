@@ -1,16 +1,13 @@
-import React, { useState } from "react";
-import "./App.css";
-import Parent from "./Parent";
-import CounterContext from "./CounterContext";
+import React from 'react';
+import './App.css';
+import Child from './child';
+import {TransactionProvider} from './transContext';
 
 function App() {
-  let countState = useState(1);
   return (
-    <CounterContext.Provider value={countState}>
-      <div>
-        <Parent />
-      </div>
-    </CounterContext.Provider>
+    <TransactionProvider>
+      <Child />
+    </TransactionProvider>
   );
 }
 
